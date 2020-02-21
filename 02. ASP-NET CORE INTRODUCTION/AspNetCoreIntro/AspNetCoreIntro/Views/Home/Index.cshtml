@@ -1,0 +1,12 @@
+﻿@model IList<Person>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+    <div class="text-center">
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            <h1 class="display-4">@Model[i].Name</h1>
+        }
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
