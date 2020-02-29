@@ -1,0 +1,99 @@
+﻿@using MyFirstAspNetCoreApp.ViewModels.Home
+@model IndexViewModel
+@inject IStringManipulation StringManipulation
+@{
+    ViewData["Title"] = "Civko";
+    var nextYear = Model.Year + 1;
+    //Layout = "~/Views/Shared/_MyLayout.cshtml";
+    ViewData["Links"]=@"<li class=""nav-item"">
+                            <a class=""nav-link text-dark"" asp-area="""" href=""https://google.com"">Google</a>
+                        </li>";
+}
+
+@for (int i = 0; i < 10; i++)
+{
+    //
+    /*
+     * 
+     * 
+     */
+    <li>@i</li>
+}
+
+@*comment*@
+<!--comment-->
+
+asen@(Model.MyMessage)
+<br>
+
+@@
+<br>
+@(Model.Year + 1)
+<br>
+@if (DateTime.UtcNow.DayOfWeek == DayOfWeek.Wednesday)
+{
+    @:Wednesday!!!
+}
+else if (true)
+{
+    <div></div>
+}
+
+@if (User.Identity.IsAuthenticated)
+{
+
+}
+
+<partial name="_CurrentYearPartial" model="nextYear"/>
+@*@await Html.PartialAsync("_CurrentYearPartial")*@
+
+    <div class="text-center">
+        <h1 class="display-4" greeting-string="@Html.Raw(Model.MyMessage)">@Html.Raw(Model.MyMessage)</h1>
+        <h2 greeting-string="Hello mother-fucker">@Model.MyMessage</h2>
+        <h2 greeting-string="@Model.UpperMessage">@Model.UpperMessage</h2>
+        <h3>@ViewData["name"]</h3>
+        <h4>@ViewBag.Pinko</h4>
+        <h4>@Context.Request.Headers["User-Agent"]</h4>
+        <h4>@User.Identity.Name</h4>
+        <p>@Model.Year</p>
+        <p>@nextYear</p>
+        <p>@ViewData["pinko"]</p>
+        <p>@DateTime.UtcNow.DayOfWeek</p>
+    </div>
+<script>
+    console.log("I was here");
+</script>
+    <ul>
+        @foreach (var name in @Model.Names)
+        {
+            <li>@StringManipulation.MakeFirstLetterUpper(name)</li>
+        }
+    </ul>
+
+@Html.TextArea("MyMessage")
+@Html.TextAreaFor(x=>x.MyMessage)
+@Html.EditorFor(x=>x.MyMessage)
+@Html.EditorFor(x=>x.Year)
+
+@using (Html.BeginForm("Index","Home", new { @class="form-check" }))
+{
+    @Html.EditorFor(x=>x.Year)
+}
+
+
+<form class="form-check" asp-action="index" asp-antiforgery="true" asp-route-id="5">
+    <input asp-for="Year"/>
+</form>
+
+@Html.Raw("aaaaaaaaaaa")
+
+@section Links{ 
+    <li class="nav-item">
+        <a class="nav-link text-dark" href="https://google.com">Google @DateTime.UtcNow.Year</a>
+    </li>
+}
+
+@*@section Scripts{ 
+<script>alert('HHHHHHHHHHHH')</script>
+}*@
+
