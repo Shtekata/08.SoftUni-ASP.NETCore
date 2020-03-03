@@ -1,0 +1,21 @@
+﻿@using MyFirstAspNetCoreApp.ViewModels.Home
+@using Microsoft.AspNetCore.Hosting
+@using Microsoft.Extensions.Configuration
+@model IndexViewModel
+@inject IWebHostEnvironment Env
+@inject IConfiguration Config
+@inject ICountInstancesService CountInstances
+@{
+    ViewData["Title"] = "Civko";
+    var nextYear = Model.Year + 1;
+}
+<div>@Config["YouTube:ApiKey"]</div>
+<br>
+<div>@Env.EnvironmentName</div>
+<div>@Env.ApplicationName</div>
+<div>@Env.ContentRootFileProvider</div>
+<div>@Env.ContentRootPath</div>
+<div>@Env.WebRootFileProvider</div>
+<div>@Env.WebRootPath</div>
+<h1>@CountInstances.Instaces</h1>
+
