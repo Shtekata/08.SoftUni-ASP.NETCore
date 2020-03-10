@@ -1,0 +1,55 @@
+/**************** feature_post css start ****************/
+.feature_post{
+
+    .single_feature_post{
+        .post_text_1{
+            @media #{$small_mobile}{
+                margin: 20px 0px 20px;
+            }
+            @media #{$large_mobile}{
+                margin: 20px 0px 20px;
+            }
+            @media #{$tab_device}{
+                margin: 20px 0px 20px;
+            }
+            @media #{$medium_device}{
+            
+            }
+        }
+    }
+    .post_1{
+        width: 33.33%;
+        float: left;
+        @media #{$small_mobile}{
+            width: 100%;
+            &:last-child{
+                margin-top: 20px;
+            }
+        }
+        @media #{$large_mobile}{
+            width: 46%;
+            margin-left: 3%;
+            h3{
+                font-size: 18px;
+            }
+            ul li{
+                padding-left: 16px;
+                margin-right: 2px;
+            }
+        }
+        @media #{$tab_device}{
+            width: 46%;
+            margin-left: 3%;
+            h3{
+                font-size: 18px;
+            }
+            ul li{
+                padding-left: 16px;
+                margin-right: 2px;
+            }
+        }
+        @media #{$medium_device}{
+        
+        }
+    }
+}

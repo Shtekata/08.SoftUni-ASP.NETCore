@@ -1,0 +1,49 @@
+.subscribe_form{
+    @media #{$tab}{
+        margin-top: 0;
+    }
+    .subscribe_form_iner{
+        padding: 55px;
+        border: 8px solid #fbf2ee;
+
+        @media #{$tab}{
+            padding: 25px 15px;
+            text-align: center;
+        }
+        @media #{$medium_device}{
+            padding: 25px 15px;
+            text-align: center;
+        }
+        h3{
+            font-weight: 700;
+            @media #{$tab}{
+                margin-bottom: 20px;
+            }
+            @media #{$medium_device}{
+                margin-bottom: 20px;
+            }
+        }
+    }
+    .form-control{
+        border: 1px solid #eee;
+        border-radius: 0;
+        height: 50px;
+        padding-left: 20px;
+        line-height: 32px;
+        @media #{$small_mobile}{
+            margin-bottom: 20px;
+        } 
+        @media #{$large_mobile}{
+            margin-bottom: 20px;
+        }
+
+    }
+    ::placeholder{
+        font-size: 13px;
+
+    }
+    .btn_1{
+        display: block;
+        text-align: center;
+    }
+}

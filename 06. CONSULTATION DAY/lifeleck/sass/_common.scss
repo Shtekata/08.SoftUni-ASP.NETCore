@@ -1,0 +1,321 @@
+/**************** common css start ****************/
+@import url('https://fonts.googleapis.com/css?family=Cardo:400,700|Lora:400,700&display=swap');
+body{
+    font-family: $font_stack_1;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+.message_submit_form:focus{
+    outline: none;
+}
+input:hover, input:focus{
+    outline: none !important;
+}
+.gray_bg{
+    background-color: $section_bg;
+}
+.section_padding {
+    padding: 140px 0px;
+    @media #{$medium_device}{
+        padding: 80px 0px;
+    }
+    @media #{$tab_device}{
+        padding: 70px 0px;
+    }
+    @media #{$small_mobile}{
+        padding: 70px 0px;
+    }
+    @media #{$large_mobile}{
+        padding: 70px 0px;
+    } 
+}
+.single_padding_top{
+    padding-top: 140px !important;
+    @media #{$medium_device}{
+        padding-top: 70px !important;
+    }
+    @media #{$tab_device}{
+        padding-top: 70px !important;
+    }
+    @media #{$small_mobile}{
+        padding-top: 70px !important;
+    }
+    @media #{$large_mobile}{
+        padding-top: 80px !important;
+    } 
+}
+.padding_top{
+    padding-top: 140px;
+    @media #{$medium_device}{
+        padding-top: 80px;
+    }
+    @media #{$tab_device}{
+        padding-top: 70px;
+    }
+    @media #{$small_mobile}{
+        padding-top: 70px;
+    }
+    @media #{$large_mobile}{
+        padding-top: 70px;
+    } 
+}
+.margin_top{
+    margin-top: 140px;
+    @media #{$medium_device}{
+        margin-top: 80px;
+    }
+    @media #{$tab_device}{
+        margin-top: 70px;
+    }
+    @media #{$small_mobile}{
+        margin-top: 70px;
+    }
+    @media #{$large_mobile}{
+        margin-top: 70px;
+    } 
+}
+a{
+    text-decoration: none;
+    @include transform_time(.5s);
+    &:hover{
+        color: $btn_bg !important;
+        text-decoration: none;
+        @include transform_time(.5s);
+    }
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $heading_color;
+    font-family: $font_stack_2;
+}
+p{
+    color: $font_1;
+    font-family: $font_stack_1;
+    line-height: 1.929;
+    font-size: 15px;
+    margin-bottom: 0px;
+    color: $font_2;
+}
+  
+h2 {
+    font-size: 30px;
+    line-height: 28px;
+    color: $heading_color;
+    font-weight: 600;
+    line-height: 1.222;
+    @media #{$small_mobile}{
+        font-size: 22px;
+        line-height: 25px;
+        
+    }
+    @media #{$large_mobile}{
+        font-size: 24px;
+        line-height: 25px;
+        
+    }
+}
+h3 {
+    font-size: 24px;
+    line-height: 25px;
+    @media #{$small_mobile}{
+        font-size: 20px;
+        
+    }
+}
+
+
+.blog_right_sidebar .widget_title {
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-style: inherit; 
+    font-weight: 600;
+    color: #2a2a2a;
+}
+h5 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+img {
+    max-width: 100%;
+}
+a:focus, .button:focus, button:focus, .btn:focus {
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    @include transform_time(1s);
+}
+
+.section_tittle{
+    margin-bottom: 80px;
+    @media #{$small_mobile}{
+        margin-bottom: 30px;
+    }
+    @media #{$large_mobile}{
+        margin-bottom: 30px;
+    }
+    @media #{$tab_device}{
+        font-size: 30px;
+    }
+    @media #{$medium_device}{
+        margin-bottom: 30px;
+    }
+    h2{
+        font-size: 40px;
+        color: $heading_color;
+        line-height: 1.25;
+        font-weight: 700;
+        position: relative;
+        @media #{$small_mobile}{
+            font-size: 25px;
+            line-height: 35px;
+        }
+        @media #{$large_mobile}{
+            font-size: 25px;
+            line-height: 35px;
+        }
+        @media #{$tab_device}{
+            font-size: 30px;
+            line-height: 40px;
+        }
+        @media #{$medium_device}{
+            font-size: 35px;
+            line-height: 40px;
+        }
+    }
+    p{
+        color: $p_color;
+        font-weight: 400;
+    }
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.mb_110{
+    margin-bottom: 110px;
+    @media #{$small_mobile}{
+        margin-bottom: 220px;
+    }
+    
+}
+.mt_130{
+    margin-top: 130px;
+    @media #{$small_mobile}{
+        margin-top: 70px;
+    }
+    @media #{$large_mobile}{
+        margin-top: 70px;
+    }
+    @media #{$tab_device}{
+        margin-top: 70px;
+    }
+    @media #{$medium_device}{
+        margin-top: 70px;
+    }
+}
+.mb_130{
+    margin-bottom: 130px;
+    @media #{$small_mobile}{
+        margin-bottom: 70px;
+    }
+    @media #{$large_mobile}{
+        margin-bottom: 70px;
+    }
+    @media #{$tab_device}{
+        margin-bottom: 70px;
+    }
+    @media #{$medium_device}{
+        margin-bottom: 70px;
+    }
+}
+.padding_less_40{
+    margin-bottom: -50px;
+}
+.z_index{
+    z-index: 9 !important;
+    position: relative;
+}
+
+@media #{$small_mobile}{
+    .container-fluid{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+@media #{$extra_big_screen}{
+    .border_top{
+        border-top: 5px solid rgb(255, 228, 228);
+        width: 1110px;
+        margin: 0 auto;
+    }
+}
+@media #{$medium_device}{
+    .border_top{
+        border-top: 5px solid rgb(255, 228, 228);
+        max-width: 930px;
+        margin: 0 auto;
+    }
+}
+@media #{$tab_device}{
+    .border_top{
+        border-top: 5px solid rgb(255, 228, 228);
+        max-width: 690px;
+        margin: 0 auto;
+    }
+}
+@media #{$large_mobile}{
+    .border_top{
+        border-top: 5px solid rgb(255, 228, 228);
+        max-width: 510px;
+        margin: 0 auto;
+    }
+}
+@media #{$small_mobile}{
+    .border_top{
+        border-top: 5px solid rgb(255, 228, 228);
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+.pl_pr_30{
+    padding: 0px 30px 0px 30px;
+    @media #{$small_mobile}{
+        padding: 0px;
+    }
+    @media #{$large_mobile}{
+        padding: 0px;
+    }
+    @media #{$tab_device}{
+    
+    }
+    @media #{$medium_device}{
+    
+    }
+}
+.pr_30{
+    padding-right: 30px;
+}
+.mb_30{
+    margin-bottom: 30px;
+}
+@media #{$extra_big_screen}{
+.container {
+    max-width: 1170px;
+    }
+}
+.single_border_bottom{
+    border-bottom: 1px solid #e9ecee;
+    margin-bottom: 30px !important;
+    .post_text_1{
+        margin: 30px 0px 30px !important;
+    }
+}
+.form-control:focus {
+    box-shadow: 0 0 0 0rem rgba(0,123,255,.25);
+}
+
+/**************** common css end ****************/
