@@ -1,0 +1,24 @@
+﻿@using MyFirstAspNetCoreApp.ViewModels.Home
+@using Microsoft.AspNetCore.Hosting
+@using Microsoft.Extensions.Configuration
+@model IndexViewModel
+
+<button class="btn btn-lg btn-primary" onclick="brat()">Click me</button>
+<div id="placeholderElement"></div>
+
+<script>
+    function brat() {
+        //alert("hello guys!!!");
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                //alert(this.responseText);
+                //console.log(this.responseText);
+                var data = JSON.parse(this.responseText);
+                document.getElementById("placeholderElement").innerHTML = data.email;
+            }
+        }
+        xhr.open("GET", "/Test/JsonIndex", true);
+        xhr.send();
+    }
+</script>
