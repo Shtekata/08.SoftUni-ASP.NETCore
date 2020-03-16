@@ -1,0 +1,97 @@
+﻿@using MyFirstAspNetCoreApp.Controllers
+@inject IPositionsService Positions
+@model TestInputModel
+<h1>Candidate for Junior Software Developer</h1>
+
+@*action="/Test/Index"*@
+<form asp-controller="Test" asp-action="Index" method="post" enctype="multipart/form-data">
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="Names.FirstName"></label>
+        <input asp-for="Names.FirstName" class="form-control" />
+        <span asp-validation-for="Names.FirstName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Names.LastName"></label>
+        <input asp-for="Names.LastName" class="form-control" />
+        <span asp-validation-for="Names.LastName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Password"></label>
+        <input type="password" asp-for="Password" class="form-control" />
+        <span asp-validation-for="Password" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ConfirmPassword"></label>
+        <input type="password" asp-for="ConfirmPassword" class="form-control" />
+        <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Egn"></label>
+        <input asp-for="Egn" class="form-control" />
+        <span asp-validation-for="Egn" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="University"></label>
+        <input asp-for="University" class="form-control" />
+        <span asp-validation-for="University" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="DateOfBirth"></label>
+        <input asp-for="DateOfBirth" class="form-control" />
+        <span asp-validation-for="DateOfBirth" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="YearsOfExperience">Years of expirience</label>
+        <input asp-for="YearsOfExperience" class="form-control" />
+        <span asp-validation-for="YearsOfExperience" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="CandidateType"></label>
+        <select asp-for="CandidateType" class="form-control" asp-items="@Html.GetEnumSelectList<CandidateType>()">
+            @*<option value="1">Junior Developer</option>
+                <option value="2">Regular Developer</option>
+                <option value="3">Senior Developer</option>
+                <option value="4">JuniorQA Developer</option>*@
+        </select>
+        <span asp-validation-for="CandidateType" class="text-danger"></span>
+    </div>
+
+    @*<div class="form-group">
+        <label asp-for="CandidateType2"></label>
+        <select asp-for="CandidateType2" class="form-control" asp-items="Positions.GetAll()"></select>
+        <span asp-validation-for="CandidateType2" class="text-danger"></span>
+    </div>*@
+
+     @*<div class="form-group">
+        <label asp-for="CandidatType3"></label>
+        <select asp-for="CandidatType3" class="form-control" asp-items="Model.AllTypes"></select>
+        <span asp-validation-for="CandidatType3" class="text-danger"></span>
+    </div>*@
+
+    <div class="form-group">
+        <label asp-for="CV"></label>
+        <input asp-for="CV" class="form-control" asp-items="Model.AllTypes" />
+        <span asp-validation-for="CV" class="text-danger"></span>
+    </div>
+
+    <hr />
+
+    <input type="submit" value="Candidate" class="btn-primary" />
+</form>
