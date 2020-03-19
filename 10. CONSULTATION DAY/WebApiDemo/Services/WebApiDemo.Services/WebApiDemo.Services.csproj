@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>..\..\Rules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="..\..\stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.0-beta009" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\WebApiDemo.Data.Common\WebApiDemo.Data.Common.csproj" />
+    <ProjectReference Include="..\..\Data\WebApiDemo.Data.Models\WebApiDemo.Data.Models.csproj" />
+    <ProjectReference Include="..\..\WebApiDemo.Models\WebApiDemo.Models.csproj" />
+  </ItemGroup>
+
+</Project>
