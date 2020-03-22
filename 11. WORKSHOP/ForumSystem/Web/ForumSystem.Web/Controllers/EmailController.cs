@@ -5,7 +5,7 @@
     using ForumSystem.Services.Messaging;
     using Microsoft.AspNetCore.Mvc;
 
-    public class EmailController : Controller
+    public class EmailController : BaseController
     {
         private readonly IEmailSender sender;
 

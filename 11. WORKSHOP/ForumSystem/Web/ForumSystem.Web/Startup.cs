@@ -1,7 +1,7 @@
 ﻿namespace ForumSystem.Web
 {
     using System.Reflection;
-
+    using ForumSystem.Common;
     using ForumSystem.Data;
     using ForumSystem.Data.Common;
     using ForumSystem.Data.Common.Repositories;
@@ -52,6 +52,11 @@
                 options.Filters.Add(new AutoValidateAntiforgeryTokenAttribute()); // CSRF
             });
 
+            services.AddAntiforgery(x =>
+            {
+                x.HeaderName = "X-CSRF-TOKEN";
+            });
+
             services.AddRazorPages();
 
             services.AddSingleton(this.configuration);
@@ -62,10 +67,11 @@
             services.AddScoped<IDbQueryRunner, DbQueryRunner>();
 
             // Application services
-            services.AddTransient<IEmailSender>(x => new SendGridEmailSender("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"));
+            services.AddTransient<IEmailSender>(x => new SendGridEmailSender(GlobalConstants.SendGrid));
             services.AddTransient<ISettingsService, SettingsService>();
             services.AddTransient<ICategoriesService, CategoriesService>();
             services.AddTransient<IPostsService, PostsService>();
+            services.AddTransient<IVotesService, VotesService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -4,7 +4,7 @@
     using ForumSystem.Web.ViewModels.Categories;
     using Microsoft.AspNetCore.Mvc;
 
-    public class CategoriesController : Controller
+    public class CategoriesController : BaseController
     {
         private readonly ICategoriesService categoriesService;
 

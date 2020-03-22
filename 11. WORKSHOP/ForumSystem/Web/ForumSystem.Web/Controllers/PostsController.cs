@@ -4,14 +4,13 @@
 
     using ForumSystem.Data.Models;
     using ForumSystem.Services.Data;
-    using ForumSystem.Web.ViewModels.Categories;
+    using ForumSystem.Services.Mapping;
     using ForumSystem.Web.ViewModels.Posts;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
-    using Microsoft.AspNetCore.Mvc.Rendering;
 
-    public class PostsController : Controller
+    public class PostsController : BaseController
     {
         private readonly IPostsService postService;
         private readonly ICategoriesService categoriesService;
@@ -26,7 +25,13 @@
 
         public IActionResult ById(int id)
         {
-            return this.View();
+            var postViewModel = this.postService.GetById<PostViewModel>(id);
+            if (postViewModel == null)
+            {
+                return this.NotFound();
+            }
+
+            return this.View(postViewModel);
         }
 
         [Authorize]
@@ -51,7 +56,9 @@
             }
 
             var user = await this.userManager.GetUserAsync(this.User);
-            var postId = await this.postService.CreateAsync(input.Title, input.Content, input.CategoryId, user.Id);
+            var postDto = AutoMapperConfig.MapperInstance.Map<PostDto>(input);
+            postDto.UserId = user.Id;
+            var postId = await this.postService.CreateAsync(postDto);
             return this.RedirectToAction(nameof(this.ById), new { id = postId });
         }
     }
