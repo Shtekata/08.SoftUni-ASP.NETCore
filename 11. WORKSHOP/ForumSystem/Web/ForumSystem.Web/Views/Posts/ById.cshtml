@@ -17,7 +17,9 @@
                             <div class="text-muted small">@Model.CreatedOn</div>
                         </div>
                         <div class="text-muted small ml-3">
-                            <form id="votesForm" method="post"></form>
+                            <form id="votesForm" method="post">
+                                @*<input type="hidden" name="myValue" value="@Model" />*@
+                            </form>
                             <div>
                                 <a href="#" onclick="sendVote(@Model.Id, true)">
                                     <i class="fa fa-thumbs-up"></i>

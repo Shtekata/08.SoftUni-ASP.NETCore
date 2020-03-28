@@ -37,6 +37,8 @@
         {
             var post = this.postRepository.All()
                 .Where(x => x.Id == id)
+
+                // .AsQueryable()
                 .To<T>()
                 .FirstOrDefault();
             return post;

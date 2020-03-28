@@ -49,6 +49,14 @@
         [Authorize]
         public async Task<IActionResult> Create(PostCreateInputModel input)
         {
+            // EDIT
+            // var post =
+            // if(!this.User.IsInRole("Admin") && this.... != post.User)
+            // {
+            //    return this.Unauthorized();
+            // }
+
+            // var post = AutoMapperConfig.MapperInstance.Map<Post>(input);
             if (!this.ModelState.IsValid)
             {
                 input.Categories = this.categoriesService.GetAll<CategoryDropDownViewModel>();

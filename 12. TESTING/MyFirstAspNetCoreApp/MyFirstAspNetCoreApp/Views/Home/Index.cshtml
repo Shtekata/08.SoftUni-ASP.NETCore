@@ -1,0 +1,21 @@
+﻿@using MyFirstAspNetCoreApp.ViewModels.Home
+@using Microsoft.AspNetCore.Hosting
+@using Microsoft.Extensions.Configuration
+@using System.Text.Encodings.Web
+@inject JavaScriptEncoder  encoder
+@inject HtmlEncoder encoder2
+@inject UrlEncoder encoder3
+@model IndexViewModel
+@*@Html.Raw(Context.Request.Query["q"])*@
+
+@Context.Request.Query["q"]
+
+<form asp-action="ReadInput">
+    <input name="data" />
+    <input type="submit" />
+</form>
+
+@{ var untrustedInput = "<\"123\">";}
+<script>
+    document.write("@encoder.Encode(untrustedInput)")
+</script>

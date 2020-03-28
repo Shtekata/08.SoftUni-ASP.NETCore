@@ -1,0 +1,9 @@
+D:\OneDrive\Projects\08.SoftUni-ASP.NETCore\13. PROJECT ARCHITECTURE\MyFirstAspNetCoreApp\ClassLibrary1\bin\Debug\netstandard2.0\ClassLibrary1.deps.json
+D:\OneDrive\Projects\08.SoftUni-ASP.NETCore\13. PROJECT ARCHITECTURE\MyFirstAspNetCoreApp\ClassLibrary1\bin\Debug\netstandard2.0\ClassLibrary1.dll
+D:\OneDrive\Projects\08.SoftUni-ASP.NETCore\13. PROJECT ARCHITECTURE\MyFirstAspNetCoreApp\ClassLibrary1\bin\Debug\netstandard2.0\ClassLibrary1.pdb
+D:\OneDrive\Projects\08.SoftUni-ASP.NETCore\13. PROJECT ARCHITECTURE\MyFirstAspNetCoreApp\ClassLibrary1\obj\Debug\netstandard2.0\ClassLibrary1.csprojAssemblyReference.cache
+D:\OneDrive\Projects\08.SoftUni-ASP.NETCore\13. PROJECT ARCHITECTURE\MyFirstAspNetCoreApp\ClassLibrary1\obj\Debug\netstandard2.0\ClassLibrary1.csproj.CoreCompileInputs.cache
+D:\OneDrive\Projects\08.SoftUni-ASP.NETCore\13. PROJECT ARCHITECTURE\MyFirstAspNetCoreApp\ClassLibrary1\obj\Debug\netstandard2.0\ClassLibrary1.AssemblyInfoInputs.cache
+D:\OneDrive\Projects\08.SoftUni-ASP.NETCore\13. PROJECT ARCHITECTURE\MyFirstAspNetCoreApp\ClassLibrary1\obj\Debug\netstandard2.0\ClassLibrary1.AssemblyInfo.cs
+D:\OneDrive\Projects\08.SoftUni-ASP.NETCore\13. PROJECT ARCHITECTURE\MyFirstAspNetCoreApp\ClassLibrary1\obj\Debug\netstandard2.0\ClassLibrary1.dll
+D:\OneDrive\Projects\08.SoftUni-ASP.NETCore\13. PROJECT ARCHITECTURE\MyFirstAspNetCoreApp\ClassLibrary1\obj\Debug\netstandard2.0\ClassLibrary1.pdb
