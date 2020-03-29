@@ -127,3 +127,4 @@ D:\OneDrive\Projects\08.SoftUni-ASP.NETCore\13. PROJECT ARCHITECTURE\MyFirstAspN
 D:\OneDrive\Projects\08.SoftUni-ASP.NETCore\13. PROJECT ARCHITECTURE\MyFirstAspNetCoreApp\MyFirstAspNetCoreApp\obj\Debug\netcoreapp3.1\MyFirstAspNetCoreApp.csproj.CoreCompileInputs.cache
 D:\OneDrive\Projects\08.SoftUni-ASP.NETCore\13. PROJECT ARCHITECTURE\MyFirstAspNetCoreApp\MyFirstAspNetCoreApp\obj\Debug\netcoreapp3.1\MyFirstAspNetCoreApp.MvcApplicationPartsAssemblyInfo.cs
 D:\OneDrive\Projects\08.SoftUni-ASP.NETCore\13. PROJECT ARCHITECTURE\MyFirstAspNetCoreApp\MyFirstAspNetCoreApp\obj\Debug\netcoreapp3.1\MyFirstAspNetCoreApp.MvcApplicationPartsAssemblyInfo.cache
+D:\OneDrive\Projects\08.SoftUni-ASP.NETCore\13. PROJECT ARCHITECTURE\MyFirstAspNetCoreApp\MyFirstAspNetCoreApp\bin\Debug\netcoreapp3.1\libman.json

@@ -358,3 +358,4 @@ D:\OneDrive\Projects\08.SoftUni-ASP.NETCore\13. PROJECT ARCHITECTURE\MyFirstAspN
 D:\OneDrive\Projects\08.SoftUni-ASP.NETCore\13. PROJECT ARCHITECTURE\MyFirstAspNetCoreApp\MyFirstAspNetCoreApp.Tests\bin\Debug\netcoreapp3.1\Forum.Views.pdb
 D:\OneDrive\Projects\08.SoftUni-ASP.NETCore\13. PROJECT ARCHITECTURE\MyFirstAspNetCoreApp\MyFirstAspNetCoreApp.Tests\bin\Debug\netcoreapp3.1\Forum.dll
 D:\OneDrive\Projects\08.SoftUni-ASP.NETCore\13. PROJECT ARCHITECTURE\MyFirstAspNetCoreApp\MyFirstAspNetCoreApp.Tests\bin\Debug\netcoreapp3.1\Forum.pdb
+D:\OneDrive\Projects\08.SoftUni-ASP.NETCore\13. PROJECT ARCHITECTURE\MyFirstAspNetCoreApp\MyFirstAspNetCoreApp.Tests\bin\Debug\netcoreapp3.1\libman.json

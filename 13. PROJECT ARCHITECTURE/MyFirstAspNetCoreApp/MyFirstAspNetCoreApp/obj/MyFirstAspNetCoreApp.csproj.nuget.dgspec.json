@@ -111,6 +111,10 @@
               "target": "Package",
               "version": "[3.1.1, )"
             },
+            "Microsoft.Web.LibraryManager.Build": {
+              "target": "Package",
+              "version": "[2.0.96, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[12.0.3, )"

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "P24JaRpZhrEHuQSTrwdAtvC9OCqqRTcYsbk/LlhYfTz28sigONMjsdTfS/epxRrpruB5W+Zj6raptPC0xS5TWw==",
+  "dgSpecHash": "nC+TROAv7EOleenYx4l1hqrFqCIiDz3lKVH7k1jWgXNGWEXZ97PQhoJ4wRNgERESYKX88wouat+nHzSl0i8vSw==",
   "success": true,
   "projectFilePath": "D:\\OneDrive\\Projects\\08.SoftUni-ASP.NETCore\\13. PROJECT ARCHITECTURE\\MyFirstAspNetCoreApp\\MyFirstAspNetCoreApp\\MyFirstAspNetCoreApp.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "C:\\Users\\geshe\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.templating\\3.1.1\\microsoft.visualstudio.web.codegeneration.templating.3.1.1.nupkg.sha512",
     "C:\\Users\\geshe\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.utils\\3.1.1\\microsoft.visualstudio.web.codegeneration.utils.3.1.1.nupkg.sha512",
     "C:\\Users\\geshe\\.nuget\\packages\\microsoft.visualstudio.web.codegenerators.mvc\\3.1.1\\microsoft.visualstudio.web.codegenerators.mvc.3.1.1.nupkg.sha512",
+    "C:\\Users\\geshe\\.nuget\\packages\\microsoft.web.librarymanager.build\\2.0.96\\microsoft.web.librarymanager.build.2.0.96.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\1.6.1\\netstandard.library.1.6.1.nupkg.sha512",
     "C:\\Users\\geshe\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
@@ -93,6 +94,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.runtime.handles\\4.3.0\\system.runtime.handles.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.runtime.interopservices\\4.3.0\\system.runtime.interopservices.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.runtime.interopservices.runtimeinformation\\4.3.0\\system.runtime.interopservices.runtimeinformation.4.3.0.nupkg.sha512",
+    "C:\\Users\\geshe\\.nuget\\packages\\system.runtime.loader\\4.3.0\\system.runtime.loader.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.runtime.numerics\\4.3.0\\system.runtime.numerics.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.security.cryptography.algorithms\\4.3.0\\system.security.cryptography.algorithms.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.security.cryptography.cng\\4.3.0\\system.security.cryptography.cng.4.3.0.nupkg.sha512",

@@ -13,12 +13,26 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Library\bootstrap\dist\css\bootstrap.css" />
+    <Content Include="Library\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="Library\bootstrap\dist\js\bootstrap.js" />
+    <Content Include="Library\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="Library\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.js" />
+    <Content Include="Library\jquery-validation-unobtrusive\dist\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Library\jquery-validation\dist\jquery.validate.js" />
+    <Content Include="Library\jquery-validation\dist\jquery.validate.min.js" />
+    <Content Include="Library\jquery\dist\jquery.js" />
+    <Content Include="Library\jquery\dist\jquery.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="bundleconfig.json" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="BuildBundlerMinifier" Version="3.2.435" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
+    <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.0.96" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
 
