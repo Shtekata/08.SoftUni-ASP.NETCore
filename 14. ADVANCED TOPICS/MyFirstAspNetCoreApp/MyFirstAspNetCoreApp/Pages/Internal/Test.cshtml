@@ -1,0 +1,16 @@
+﻿@*@page "/softuni/{name:alpha:minlength(3):maxlength(6)?}"*@
+@*@page "/softuni/{name:alpha:length(3,6)?}"*@
+@*@page "/softuni/{name:int:min(3):max(6)?}"*@
+@*@page "/softuni/{name:int:range(3,6)?}"*@
+@*@page "/softuni/{name:regex(^[0-9]{{3}}-[a-z]{{3,5}}$)?}"*@
+@*@page "/softuni/{name:regex(^[а-яА-Я]+$)?}"*@
+@*@page "/softuni/{id:int:min(1)?}/{name:regex(^[а-яА-Я\\-]+$)?}"*@
+@page "/softuni/{name:cyrillic?}"
+@model MyFirstAspNetCoreApp.Pages.Internal.TestModel
+@{
+    ViewData["Title"] = "Test";
+}
+
+<h1>Test</h1>
+<h1>@Model.Name</h1>
+

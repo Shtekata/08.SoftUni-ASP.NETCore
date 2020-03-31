@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "y29bsSEPiuYSBzNgkaYM14waL3VTYtYjTNkT6c0Wj5JwhXfDpn3pKfYj7kb8QEvbWT527qsQu/fWkOmm91CenA==",
+  "success": true,
+  "projectFilePath": "D:\\OneDrive\\Projects\\08.SoftUni-ASP.NETCore\\14. ADVANCED TOPICS\\MyFirstAspNetCoreApp\\ClassLibrary1\\ClassLibrary1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
