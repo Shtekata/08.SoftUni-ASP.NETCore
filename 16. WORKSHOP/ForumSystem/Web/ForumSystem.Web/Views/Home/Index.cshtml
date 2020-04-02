@@ -4,14 +4,15 @@
     this.ViewData["Title"] = $"Welcome to {GlobalConstants.SystemName}!";
 }
 
-    <div class="text-center">
+    <div class="text-center mb-3" >
         <h1 class="display-4">@this.ViewData["Title"]</h1>
-        <cache expires-after="TimeSpan.FromDays(10)" vary-by-query="id">
+        <cache expires-after="TimeSpan.FromSeconds(10)" vary-by-query="id">
             <vc></vc>
             <h1 class="display-4">@DateTime.UtcNow</h1>
         </cache>
+        <a asp-controller="Posts" asp-action="Create" class="btn btn-primary btn-lg">Create new forum post</a>
     </div>
-
+<hr />
 <div class="row">
     @foreach (var category in Model.Categories)
     {

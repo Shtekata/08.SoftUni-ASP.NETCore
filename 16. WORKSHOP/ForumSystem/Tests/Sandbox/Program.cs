@@ -5,6 +5,7 @@
     using System.IO;
     using System.Threading.Tasks;
 
+    using CommandLine;
     using ForumSystem.Data;
     using ForumSystem.Data.Common;
     using ForumSystem.Data.Common.Repositories;
@@ -13,9 +14,6 @@
     using ForumSystem.Data.Seeding;
     using ForumSystem.Services.Data;
     using ForumSystem.Services.Messaging;
-
-    using CommandLine;
-
     using Microsoft.EntityFrameworkCore;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;

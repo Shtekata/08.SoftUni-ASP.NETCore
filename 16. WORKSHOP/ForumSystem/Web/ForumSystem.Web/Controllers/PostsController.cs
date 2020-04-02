@@ -31,6 +31,7 @@
                 return this.NotFound();
             }
 
+            this.TempData["InfoMessage"] = "Thank you for visiting post.";
             return this.View(postViewModel);
         }
 
