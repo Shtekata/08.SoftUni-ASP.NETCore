@@ -64,6 +64,8 @@
                 return this.View(input);
             }
 
+            // user last post -> 6:49
+            // (DateTime.UtcNow - 6:49 < 5 mins) { return ... can not publish in 10 mins. }
             var user = await this.userManager.GetUserAsync(this.User);
             var postDto = AutoMapperConfig.MapperInstance.Map<PostDto>(input);
             postDto.UserId = user.Id;
