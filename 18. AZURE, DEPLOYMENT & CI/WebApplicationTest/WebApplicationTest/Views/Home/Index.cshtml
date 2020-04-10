@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+
+<div class="text-center">
+    <h1 class="display-4">@Environment.OSVersion</h1>
+    <dl class="row">
+        @foreach (var property in typeof(Environment).GetProperties().OrderBy(x => x.Name))
+        {
+            <dt class="col-sm-3">@property.Name</dt>
+            <dt class="col-sm-9">@property.GetValue(null, null)</dt>
+        }
+    </dl>
+</div>
