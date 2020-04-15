@@ -96,7 +96,7 @@
             services.AddScoped<IDbQueryRunner, DbQueryRunner>();
 
             // Application services
-            services.AddTransient<IEmailSender>(x => new SendGridEmailSender(GlobalConstants.SendGrid));
+            services.AddTransient<IEmailSender>(x => new SendGridEmailSender(GlobalConstants.Send));
             services.AddTransient<ISettingsService, SettingsService>();
             services.AddTransient<ICategoriesService, CategoriesService>();
             services.AddTransient<IPostsService, PostsService>();
